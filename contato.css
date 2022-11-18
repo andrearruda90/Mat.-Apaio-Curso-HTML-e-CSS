@@ -1,0 +1,254 @@
+
+main
+{
+	/*background: url("https://www.designbolts.com/wp-content/uploads/2012/11/Dark-textured-pattern-for-backgrounds.jpg");*/
+	width: 940px;
+	margin: 0 auto;
+}
+
+h1
+{
+	text-align: center;
+	padding: 10px;
+}
+.faixa
+{
+	width: 100%;
+}
+
+body
+{
+	background: rgb(255, 255, 255);
+}
+
+.fundocinza
+{
+	background: url("bgmain.jpg");
+}
+
+.caixa
+{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+nav:hover
+{
+	border-color: black;
+	color: black;
+	background: gray;
+}
+
+
+
+nav
+{
+	position: relative;
+	top: 0px;
+	font-size: 30px;
+	background: black;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+
+}
+nav li
+{
+	display: inline;
+	margin: 0 0 0 15px;
+
+
+}
+
+nav a
+{
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+
+nav:hover a
+{
+	color: black;
+}
+
+nav a:hover
+{
+	color: white;
+	font-size: 21px;
+}
+
+.produtos
+{
+	width: 940px;
+	margin: 0  auto;
+	padding: 50px 0;
+
+}
+
+.produtos li
+{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-color: gray ;
+	border-width: 5px;
+	border-style: solid	;
+	border-radius: 20px;
+	background: white;
+}
+
+.produtos li:hover
+{
+	border-color: hsl(59, 95%, 47%);
+
+}
+
+.produtos li:hover h2
+{
+		font-size: 34px; /*nada muda*/
+}
+.produtos li:active
+{
+	border-color: darkred;
+}
+
+.produtos h2
+{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-preco
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.produto-descricao
+{
+	font-size: 18px;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.rodape
+{
+	text-align: center;
+	background: url("bg.jpg");
+	color: white;
+	padding: 40px 0;
+}
+
+.copyright
+{
+	font-size: 13px;
+
+}
+
+.banner
+{
+	display: inline-block;
+	width: 45%;
+	padding-top: 100px;
+}
+
+.principal
+{
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 100px;
+	padding-left: 20px;
+
+}
+
+.indexbody
+{
+	background: #222222;
+	color: white;
+}
+
+
+.principal p
+{
+	font-size: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.missao
+{
+	font-weight: bold;
+	color: yellow;
+}
+
+
+.beneficios
+{
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	vertical-align: bottom;
+	padding-top: 50px;
+	right: 0;
+	padding-bottom: 100px;
+}
+
+
+.beneficios li
+{
+	position: relative;
+	left: 80%;
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-align: justify;
+
+}
+
+.imagembeneficios
+{
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	padding-top: 50px;
+	left: 10%;
+	padding-bottom: 100px;
+
+}
+
+.titulo-centralizado
+{
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+form
+{
+	color: black;
+	margin: 40px 0;
+}
+
+form label
+{
+	display: block;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+form input
+{
+	display: block;
+	margin-bottom: 20px;
+	padding: 6px 25px;
+	width: 50%;
+}
