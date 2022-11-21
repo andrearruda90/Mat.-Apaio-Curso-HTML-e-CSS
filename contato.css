@@ -1,7 +1,11 @@
+body
+{
+	font-family: 'Hanuman', serif;
+}
 
 main
 {
-	/*background: url("https://www.designbolts.com/wp-content/uploads/2012/11/Dark-textured-pattern-for-backgrounds.jpg");*/
+	/*=background: url("https://www.designbolts.com/wp-content/uploads/2012/11/Dark-textured-pattern-for-backgrounds.jpg");*/
 	width: 940px;
 	margin: 0 auto;
 }
@@ -52,6 +56,7 @@ nav
 	padding-right: 10px;
 	padding-bottom: 5px;
 	text-align: center;
+	transition: 0.8s background;
 
 }
 nav li
@@ -69,6 +74,7 @@ nav a
 	font-weight: bold;
 	font-size: 20px;
 	text-decoration: none;
+	transition: 0.3s color;
 
 }
 
@@ -238,17 +244,65 @@ form
 	margin: 40px 0;
 }
 
-form label
+form label, form legend
 {
 	display: block;
 	font-size: 16px;
 	margin-bottom: 10px;
 }
 
-form input
+.input-padrao
 {
 	display: block;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 	padding: 6px 25px;
 	width: 50%;
+}
+
+.checkbox
+{
+	margin: 20px 0;
+}
+
+.pergunta
+{
+	margin: 20px 0;
+}
+
+.Enviar
+{
+	width: 25%;
+	padding: 8px 0;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	border: none;
+	transition: 0.5s all;
+	border-radius: 3px;
+
+}
+
+.Enviar:hover
+{
+	background-color: darkorange;
+	transform: scale(1.1);
+}
+
+table
+{
+	margin: 20px  0 40px;
+}
+
+table thead
+{
+	background: orange;
+	color: white;
+	font-weight: bold;
+}
+
+table td, th
+{
+	border: 1px solid gray;
+	padding: 6px 15px;
 }

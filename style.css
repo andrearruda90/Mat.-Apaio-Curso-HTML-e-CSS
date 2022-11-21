@@ -1,6 +1,4 @@
-#banner {
-	width:100%;
-}
+
 
 .principal{
 	background: #CCCCCC;
@@ -45,4 +43,8 @@ ul {
 
 .imagembeneficios {
 	width: 50%;
+}
+
+.banner{
+	width:50%;
 }

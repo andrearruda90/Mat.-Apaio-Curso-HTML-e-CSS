@@ -1,47 +1,37 @@
-main
+body
 {
+	font-family: 'Hanuman', serif;
+}
+
+main {
 	background: url(https://www.designbolts.com/wp-content/uploads/2012/11/Dark-textured-pattern-for-backgrounds.jpg);
 }
 
-h1
-{
+h1 {
 	text-align: center;
 	padding: 10px;
 }
-.faixa
-{
+
+.faixa {
 	width: 100%;
 }
 
-body
-{
+body {
 	background: rgb(255, 255, 255);
 }
 
-.fundocinza
-{
+.fundocinza {
 	background: url("bgmain.jpg");
 }
 
-.caixa
-{
+.caixa {
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
 
 }
 
-nav:hover
-{
-	border-color: black;
-	color: black;
-	background: gray;
-}
-
-
-
-nav
-{
+nav {
 	position: relative;
 	top: 0px;
 	font-size: 30px;
@@ -49,182 +39,232 @@ nav
 	padding-right: 10px;
 	padding-bottom: 5px;
 	text-align: center;
-
+	transition: 0.8s background;
 }
-nav li
-{
+
+nav li {
 	display: inline;
 	margin: 0 0 0 15px;
-
-
 }
 
-nav a
-{
+nav:hover {
+	border-color: black;
+	color: black;
+	background: gray;
+}
+
+nav a {
 	text-transform: uppercase;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	text-decoration: none;
-
+	transition: 0.3s color;
 }
 
-nav:hover a
-{
+nav:hover a {
 	color: black;
 }
 
-nav a:hover
-{
+nav a:hover {
 	color: white;
 	font-size: 21px;
 }
 
-.produtos
-{
+.produtos {
 	width: 940px;
-	margin: 0  auto;
+	margin: 0 auto;
 	padding: 50px 0;
-
 }
 
-.produtos li
-{
+.produtos li {
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	width: 29.9%;
 	vertical-align: top;
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border-color: gray ;
+	border-color: gray;
 	border-width: 5px;
-	border-style: solid	;
+	border-style: solid;
 	border-radius: 20px;
 	background: white;
+	transition: 1s border-color;
 }
 
-.produtos li:hover
-{
-	border-color: hsl(59, 95%, 47%);
+.produtos li:hover {
+	border-color: darkorange;
 
 }
 
-.produtos li:hover h2
-{
-		font-size: 34px; /*nada muda*/
+.produtos li:hover h2 {
+	font-size: 34px;
+	/*nada muda*/
 }
-.produtos li:active
-{
+
+.produtos li:active {
 	border-color: darkred;
 }
 
-.produtos h2
-{
+.produtos h2 {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.produto-preco
-{
+.produto-preco {
 	font-size: 22px;
 	font-weight: bold;
 }
 
-.produto-descricao
-{
+.produto-descricao {
 	font-size: 18px;
 	margin: 10px 0;
 	padding: 10px;
 }
 
-.rodape
-{
+.rodape {
 	text-align: center;
 	background: url("bg.jpg");
 	color: white;
 	padding: 40px 0;
 }
 
-.copyright
-{
+.copyright {
 	font-size: 13px;
 
 }
 
-.banner
-{
+.banner {
 	display: inline-block;
 	width: 45%;
 	padding-top: 100px;
 }
 
-.principal
-{
-	width: 45%;
+.principal {
+	width: 60%;
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 100px;
-	padding-left: 20px;
-
+	align-items: center;
 }
 
-.indexbody
-{
+.indexbody {
 	background: #222222;
 	color: white;
 }
 
 
-.principal p
-{
+.principal p {
 	font-size: 20px;
 	padding-bottom: 20px;
 	text-align: justify;
 }
 
-.missao
-{
+.missao {
 	font-weight: bold;
 	color: yellow;
 }
 
-
-.beneficios
-{
-	position: relative;
-	display: inline-block;
-	width: 45%;
-	vertical-align: bottom;
-	padding-top: 50px;
-	right: 0;
-	padding-bottom: 100px;
+p::first-line{
+	
 }
 
-
-.beneficios li
-{
-	position: relative;
-	left: 80%;
-	font-size: 20px;
-	padding-bottom: 5px;
-	text-align: justify;
-
-}
-
-.imagembeneficios
-{
-	position: relative;
-	display: inline-block;
-	width: 45%;
-	padding-top: 50px;
-	left: 10%;
-	padding-bottom: 100px;
-
-}
-
-.titulo-centralizado
-{
+.titulo-centralizado {
 	font-size: 40px;
 	padding-bottom: 20px;
+}
+
+/* alterando  css pagina principal */
+
+.banner {
+	width: 100%;
+	padding: 0 0;
+}
+
+
+.itens:before{
+	content:"★"
+}
+
+.titulo-principal::first-letter{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 1em;
+}
+
+.principal p {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal {
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.beneficios {
+	background-color: orange;
+	font-size: 2em;
+	position: relative;
+	display: inline-block;
+	width: 69%;
+	vertical-align: top;
+	padding-top: 50px;
+	padding-bottom: 178px;
+}
+
+
+.beneficios li {
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	left: 260px;
+	color: black;
+	top: 50px;
+}
+
+
+.imagembeneficios {
+	position: relative;
+	display: inline;
+	width: 30%;
+	padding-top: px;
+	padding-bottom: 100px;
+	height: 470px;
+}
+
+.mapa{
+	padding: 3em 5em 3em 5em ;
+}
+
+.mapa p{
+	padding-bottom: 2em;
+	text-align: center;
+}
+
+.videos{
+	padding: 2em;
+	text-align: center;
+}
+
+.whatsapp{
+	text-align: right;
+	padding: 1em;
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+.itens:first-child{
+	font-weight: bold;
 }
