@@ -1,5 +1,4 @@
-body
-{
+body {
 	font-family: 'Hanuman', serif;
 }
 
@@ -165,9 +164,7 @@ nav a:hover {
 	color: yellow;
 }
 
-p::first-line{
-	
-}
+p::first-line {}
 
 .titulo-centralizado {
 	font-size: 40px;
@@ -182,11 +179,11 @@ p::first-line{
 }
 
 
-.itens:before{
-	content:"★"
+.itens:before {
+	content: "★"
 }
 
-.titulo-principal::first-letter{
+.titulo-principal::first-letter {
 	font-weight: bold;
 	font-size: 2em;
 }
@@ -242,29 +239,80 @@ p::first-line{
 	height: 470px;
 }
 
-.mapa{
-	padding: 3em 5em 3em 5em ;
+.mapa {
+	padding: 3em 5em 3em 5em;
 }
 
-.mapa p{
+.mapa p {
 	padding-bottom: 2em;
 	text-align: center;
 }
 
-.videos{
+.videos {
 	padding: 2em;
 	text-align: center;
 }
 
-.whatsapp{
+.whatsapp {
 	text-align: right;
 	padding: 1em;
+	opacity: inherit;
 }
 
-.itens{
+.whatsapp img {
+	opacity: 60%;
+
+}
+
+.whatsapp img:hover {
+	opacity: 100%;
+}
+
+.itens {
 	line-height: 1.5;
 }
 
-.itens:first-child{
+.itens:first-child {
 	font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	
+	main{
+		align-items: center;
+	}
+	.caixa{
+		width: auto;
+	}
+
+	.produtos{
+		min-width: 130%;
+		min-height: 130%;
+		width: 50%;
+		height: 50%;
+		margin-left: 30px;
+	}
+
+	.produtos img{
+		width: 130px;
+	}
+
+	.produtos h2{
+		font-size: 90%;
+	}
+
+	.produtos p{
+		font-size: 90%;
+	}
+
+	.produtos li{
+		border-width: 1px;
+		margin-bottom: 15px;
+	}
+
+	.faixa{
+		width: 98%;
+	}
 }
